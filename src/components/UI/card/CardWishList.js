@@ -5,7 +5,7 @@ import downext from '../../../assets/img/down-chevron (5) 3 (1).png'
 import downprev from '../../../assets/img/down-chevron (5) 3.png'
 import likeYes from '../../../assets/img/like-heart (1).png'
 import likeNot from '../../../assets/img/likebeli.svg'
-import wishlist from '../../../assets/img/wishlist.svg'
+// import wishlist from '../../../assets/img/wishlist.svg'
 import Button from '../button/Button'
 
 const CardWishList = ({ dataArray }) => {
@@ -50,7 +50,7 @@ const CardWishList = ({ dataArray }) => {
         {currentData?.map((element) => {
           return (
             <CARDWISHLISTCONTAINERSTYLED key={element.id}>
-              <IMGSTYLED src={wishlist} alt='' />
+              <IMGSTYLED src={element.wishlist} alt='' />
               <TEXTSTYLED>{element.title}</TEXTSTYLED>
               <PRICESTYLED>{element.price} c</PRICESTYLED>
               <IMGLIKESTYLED
